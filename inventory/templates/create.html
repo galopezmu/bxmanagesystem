@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Ingresar nuevo ítem{% endblock %}
+{% block subtitle %}Desde esta pantalla se podrán ingresar nuevos materiales al inventario.{% endblock %}
+{% block content %}
+<form class="user">
+    <div class="form-group">
+        <input type="text" class="form-control form-control-user" id="name"
+               placeholder="Nombre">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control form-control-user" id="description"
+               placeholder="Descripción">
+    </div>
+    <div class="form-group">
+        <input type="number" class="form-control form-control-user" id="price"
+               placeholder="Precio">
+    </div>
+    <div class="form-group">
+        <input type="number" class="form-control form-control-user" id="qty"
+               placeholder="Cantidad">
+    </div>
+    <a href="index.html" class="btn btn-primary btn-user btn-block">
+        Ingresar
+    </a>
+</form>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Control de inventario{% endblock %}
+{% block subtitle %}Desde esta pantalla se podrán visualizar todos los ítems disponibles en el inventario.{% endblock %}
+{% block title_description %}
+<a href="{% url 'create' %}" class="m-0 font-weight-bold text-primary"> Ingresar nuevo material </a>
+{% endblock%}
+{% block content %}
+<div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.description }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.qty }}</td>
+            <td class="text-center"><i class="fas fa-search fa-fw"></i></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
