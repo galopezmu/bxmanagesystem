@@ -3,6 +3,6 @@ from django.urls import path
 from inventory import views
 
 urlpatterns = [
-    path("", views.get_products, name="inventory"),
-    path("create/", views.create_product, name="create"),
+    path("", views.Products.as_view(), name="inventory"),
+    path("create/", views.CreateProduct.as_view(), name="create"),
 ]

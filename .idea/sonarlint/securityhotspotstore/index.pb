@@ -31,8 +31,6 @@ B
 inventory/forms.py,1\7\171d6d86aa9c9639af8f48f33cf77f89dd4bf98b
 R
 "inventory/templates/inventory.html,6\8\6837a83c35457df9b4962e1510b20346795abb87
-N
-inventory/templates/_base.html,8\9\895b0e944de28909dbd0f103605dfbcf4a801eec
 O
 inventory/templates/create.html,5\a\5a46c53c3ba91f4820fbfc384ded810d1e66bb85
 M
@@ -40,3 +38,5 @@ M
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+B
+inventory/tests.py,0\e\0e20c8d00692c5a822ab922285c9a8c56e50b160
