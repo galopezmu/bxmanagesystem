@@ -77,3 +77,25 @@ class EditProductQty(View):
         item = get_object_or_404(Product, pk=_id)
         form = EditQtyForm(initial={"name": item.name, "qty": item.qty})
         return render(request, "edit_qty.html", {"form": form})
+
+    def post(self, request: HttpRequest, _id: int):
+        item = get_object_or_404(Product, pk=_id)
+        qty = item.qty
+        form = EditQtyForm(request.POST)
+        if form.is_valid():
+            match form.cleaned_data["operation_type"]:
+                case "1":
+                    if qty - int(form.cleaned_data["new_qty"]) >= 0:
+                        item.qty -= int(form.cleaned_data["new_qty"])
+                        item.save()
+                    else:
+                        messages.error(
+                            request,
+                            "No se cuenta con la suficiente cantidad para sustraer",
+                        )
+                        return render(request, "edit_qty.html", {"form": form})
+                case "2":
+                    item.qty += int(form.cleaned_data["new_qty"])
+                    item.save()
+            messages.success(request, "Producto actualizado exitosamente.")
+        return redirect("inventory")

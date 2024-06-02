@@ -24,7 +24,12 @@
             <td>{{ product.description }}</td>
             <td>{{ product.price }}</td>
             <td>{{ product.qty }}</td>
-            <td class="text-center"><i class="fas fa-search fa-fw"></i></td>
+            <td class="text-center">
+                <a href="{% url 'edit' _id=product.id%}" data-toggle="tooltip" title="Editar información"><i
+                        class="fas fa-edit fa-fw"></i></a>
+                <a href="{% url 'edit_qty' _id=product.id%}" data-toggle="tooltip" title="Editar cantidad"><i
+                        class="fas fa-archive fa-fw"></i></a>
+            </td>
         </tr>
         {% endfor %}
         </tbody>
@@ -43,7 +48,6 @@
 </script>
 
 {% block modal %}
-<!-- Modal -->
 <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

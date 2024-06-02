@@ -26,7 +26,7 @@ B
 B
 inventory/forms.py,1/7/171d6d86aa9c9639af8f48f33cf77f89dd4bf98b
 R
-"inventory/templates/inventory.html,6\8\6837a83c35457df9b4962e1510b20346795abb87
+"inventory/templates/inventory.html,6/8/6837a83c35457df9b4962e1510b20346795abb87
 O
 inventory/templates/create.html,5/a/5a46c53c3ba91f4820fbfc384ded810d1e66bb85
 M
@@ -36,8 +36,6 @@ M
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 B
 inventory/tests.py,0\e\0e20c8d00692c5a822ab922285c9a8c56e50b160
-O
-inventory/templates/modify.html,d/a/da2a76b3def16023d707110da004d0b7a1452dfe
 M
 inventory/templates/edit.html,8/3/831b832450a559209520ede6873e13daa4e83017
 Q
@@ -48,3 +46,5 @@ L
 static/css/bootstrap.min.css,6/0/60d2b7dcd8c182d9d4c4936d505a55421b522dfe
 M
 static/css/sb-admin-2.min.css,7/3/73921cad9a7bdaa2a31df0ef71370b33846c7039
+e
+5static/vendor/bootstrap/js/bootstrap.bundle.min.js.js,f/0/f0d0b837eb1685d7a5c54e605e12ce4e8c3829ed

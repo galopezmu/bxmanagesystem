@@ -115,7 +115,7 @@ class EditQtyForm(forms.Form):
         required=False,
     )
     qty = forms.IntegerField(
-        min_value=1,
+        min_value=0,
         max_value=1000,
         label="qty",
         widget=forms.NumberInput(
