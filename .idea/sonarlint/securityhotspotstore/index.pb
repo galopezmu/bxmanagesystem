@@ -33,7 +33,7 @@ M
 inventory/templates/base.html,5/8/58f8aba6b9ccb8b9c16f3d47c3c0ae06ab2e438e
 :
 
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 B
 inventory/tests.py,0\e\0e20c8d00692c5a822ab922285c9a8c56e50b160
 M
@@ -48,3 +48,21 @@ M
 static/css/sb-admin-2.min.css,7/3/73921cad9a7bdaa2a31df0ef71370b33846c7039
 e
 5static/vendor/bootstrap/js/bootstrap.bundle.min.js.js,f/0/f0d0b837eb1685d7a5c54e605e12ce4e8c3829ed
+N
+inventory/templates/index.html,b/7/b7cbe68fdc5ed8d11afdf025a64f67c6c889c8cf
+N
+inventory/templates/login.html,8/1/81158ecbb7b9c1226c27c0d6aed6e33195f55f5c
+=
+auth/views.py,f/5/f519bd9e0ac93acc233404b7325784653ba7b719
+<
+auth/urls.py,3/2/32d6495987923f607ab7ee84916b9237bc56f8d3
+<
+auth/apps.py,1/c/1ca3dbc565896745c4c6b8d637b4b77bfbf11802
+>
+bxauth/urls.py,f/1/f1ac9f079a3170daf0cf138a053ab2df8ed5b8af
+K
+bxauth/templates/login.html,f/d/fdfc0bf5b4a5a0423aa8329d2a7e560efc27f848
+?
+bxauth/forms.py,3/a/3a1311bc601dd60e4d2a4fcab70709ce50d59cfe
+?
+bxauth/views.py,2/9/292915215f24c5c0afda5da3c1157d92360da26e

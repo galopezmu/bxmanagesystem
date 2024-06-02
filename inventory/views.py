@@ -1,5 +1,6 @@
 # Create your views here.
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db import IntegrityError
 from django.http import HttpRequest
 from django.shortcuts import get_object_or_404, redirect, render
@@ -9,10 +10,11 @@ from inventory.forms import CreateForm, EditForm, EditQtyForm
 from inventory.models import Product
 
 
-class Products(View):
+class Products(LoginRequiredMixin, View):
     """Inventory products view."""
 
     model = Product
+    login_url = ""
 
     def get(self, request: HttpRequest, *args, **kwargs):
         products = self.model.objects.all()
